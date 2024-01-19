@@ -1,0 +1,13 @@
+{% extends 'BookManagmentapp/base.html' %}
+
+{% block content %}
+
+<div>
+{% if author %}
+    <p>Имя: {{ author.name }}</p>
+    <p>Фамилия: {{ author.surname  }}</p>
+
+{% endif %}
+</div>
+<button><a href="{% url 'author_list' %}">Back</a></button>
+{% endblock %}

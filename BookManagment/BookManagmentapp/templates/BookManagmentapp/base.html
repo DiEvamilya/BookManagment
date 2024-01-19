@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="{% static 'css/styles.css' %}">
+    <title>Title</title>
+</head>
+<body>
+<h1> BOOK MENEGMENT</h1>
+<nav class="nav">
+<span><a href="{% url 'book_list' %}">Список книг</a></span>
+<span><a href="{% url 'author_list' %}">Список авторов</a></span>
+
+<span><a href="{% url 'add_book' %}">Добавить книгу</a></span>
+<span><a href="{% url 'add_author' %}">Добавить автора</a></span>
+
+
+</nav>
+
+{% block content %}
+{% endblock %}
+
+</body>
+</html>

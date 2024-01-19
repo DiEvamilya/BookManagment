@@ -1,0 +1,16 @@
+{% extends 'BookManagmentapp/base.html' %}
+
+{% block content %}
+{% if book %}
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_div }}
+
+    <input type="submit" value="update">
+
+</form>
+
+{% endif %}
+
+<button><a href="{% url 'book_list' %}">Back</a></button>
+{% endblock %}

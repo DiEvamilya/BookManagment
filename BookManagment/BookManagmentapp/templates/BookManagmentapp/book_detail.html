@@ -1,0 +1,20 @@
+{% extends 'BookManagmentapp/base.html' %}
+
+{% block content %}
+
+<div>
+{% if book %}
+    <p>Название книги: {{ book.title }}</p>
+    <p>Автор:
+        {{ book.author.name }} {{ book.author.surname }}
+  </p>
+    <p>Дата публикации: {{ book.year_of_publication }}</p>
+    <p>Жанр: {% for genre in book.genres.all %}
+                 {{ genre.name }}
+             {% endfor %}
+    </p>
+    <p>Рейтинг: {{ book.rating }}</p>
+{% endif %}
+</div>
+<button><a href="{% url 'book_list' %}">Back</a></button>
+{% endblock %}

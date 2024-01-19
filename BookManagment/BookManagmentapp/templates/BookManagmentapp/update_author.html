@@ -1,0 +1,18 @@
+{% extends 'BookManagmentapp/base.html' %}
+
+{% block content %}
+
+{% if author %}
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{ form.as_p }}
+
+    <button>Update<button>
+
+</form>
+
+{% endif %}
+
+<button><a href="{% url 'author_list' %}">Back</a></button>
+{% endblock %}

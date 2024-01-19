@@ -1,0 +1,16 @@
+{% extends 'BookManagmentapp/base.html' %}
+
+{% block content %}
+
+    <ul>
+    {% for book in book_list %}
+        <li>{{ book.title }}</li>
+    <button><a href="{% url 'book_detail' book.slug %}">Detail</a></button>
+    <button><a href="{% url 'update_book' book.slug %}">Update</a></button>
+    <button><a href="{% url 'book_delete' book.slug %}">Delete</a></button>
+    {% endfor %}
+
+    </ul>
+<button><a href="{% url 'start' %}">Back</a></button>
+
+{% endblock %}

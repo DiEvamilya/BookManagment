@@ -1,0 +1,56 @@
+.nav{
+    width: auto;
+    background-color: rgba(20,110,180,0.65);
+    gap: 20px;
+    min-height: 100px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    font-size: larger;
+    color: rgba(0,7,15,0.56);
+    align-content: space-around;
+    justify-content: center;
+    margin-bottom: 20px;
+
+}
+* {
+    margin: 0;
+}
+body {
+    background-color: rgba(180,170,142,0.65);
+}
+
+h1 {
+    margin: 20px 350px 20px;
+    color: #001176;
+}
+
+a{
+    color: black;
+}
+p{
+    font-size: 20px;
+    color: rgba(0,9,32,0.56);
+
+}
+button{
+    background-color: rgba(38,78,104,0.56);
+    color: aliceblue;
+    margin: 10px 10px 20px 0;
+
+}
+
+li{
+    font-size: 25px;
+    color: black;
+}
+
+input{
+    background-color: rgba(227,216,184,0.56);
+    border: 2px solid rgba(188,177,145,0.56);
+    max-width: 600px;
+    width: 350px;
+    min-height: 40px;
+    margin: 5px 0 5px 100px;
+
+}
